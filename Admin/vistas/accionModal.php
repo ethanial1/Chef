@@ -49,7 +49,7 @@
       </div>
       <form action="" id="formBorrar">
         <div class="modal-body">
-          <label for="">El usuario será eliminado de forma permanente del sistema y ya no podrá ingresar. <br> <br> ¿Eliminar a:?</label>
+          <label for="">El usuario será eliminado de forma permanente del sistema y ya no podrá ingresar. <br> <br>Eliminar a:</label>
           <input type="number" id="idB" class="form-control" hidden>
           <input type="text" id="nombreB" class="form-control" disabled>
         </div>

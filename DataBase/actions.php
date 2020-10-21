@@ -6,7 +6,6 @@
 
     //declaramos las variable que vamos a recibir por el método post
     $id = (isset($_POST['id'])) ? $_POST['id']: '';
-    $clave = (isset($_POST['clave'])) ? $_POST['clave']: '';
     $nombre = (isset($_POST['nombre'])) ? $_POST['nombre']: '';
     $poblacion = (isset($_POST['poblacion'])) ? $_POST['poblacion']: '';
     $estado = (isset($_POST['estado'])) ? $_POST['estado']: '';
@@ -25,7 +24,7 @@
     
     switch($opcion){
         case 1: //editar un usuario
-            $consulta = "UPDATE cocineros SET Clave='$clave',Nombre='$nombre',Poblacion='$poblacion',Estado='$estado',Pais='$pais',Edad='$edad',Descripcion='$descripcion',Gustos='$gustos' WHERE Id = '$id'";
+            $consulta = "UPDATE cocineros SET Nombre='$nombre',Poblacion='$poblacion',Estado='$estado',Pais='$pais',Edad='$edad',Descripcion='$descripcion',Gustos='$gustos' WHERE Id = '$id'";
             $result = $conexion->prepare($consulta);
             $result->execute();
 
