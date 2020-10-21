@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+}
+
+#pantalla-dividida{
+    display: flex;
+    height: 30vh;
+}
+.izquierda{
+    padding: 3vh;
+    height: 70vh;
+    width: 70vh;
+    margin-left: 10vh;
+}
+.derecha{
+    text-align:justify;
+    color: gray;
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 28vh;
+    width: 50vh;
+}
