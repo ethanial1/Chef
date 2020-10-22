@@ -9,6 +9,6 @@
     if($conex -> connect_error){
         die("Conexión Fallida. ".$conex -> connect_error);
     }else{
-        echo'Exito';
+        
     }
 

@@ -1,5 +1,7 @@
 <?php
 $op = ($_GET['op']);
+
+include('../DataBase/conect.php');
 ?>
 <!doctype html>
 <html lang="en">
@@ -14,6 +16,7 @@ $op = ($_GET['op']);
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
 
     <title>Hello, world!</title>
 </head>
@@ -40,6 +43,8 @@ $op = ($_GET['op']);
                             <div class="">
                                 <a href="Dashboard.php?op=1" class="d-block p-4 "><i class="icon ion-ios-people mr-2"></i>Usuarios</a>
                                 <a href="Dashboard.php?op=2" class="d-clock p-4 "><i class="icon ion-ios-bookmarks mr-2"></i>Recetas</a>
+                                <a href="Dashboard.php?op=3" class="d-block p-4"><i class="icon ion-ios-nutrition mr-2"></i>Categorias</a>
+                                <a href="Dashboard.php?op=4" class="d-clock p-4 "><i class="icon ion-md-planet mr-2"></i>General</a>
                             </div>
                         </div>
                     </div>
@@ -80,9 +85,6 @@ $op = ($_GET['op']);
                                 <h5 class="mb-0">Bienvenido user</h5>
                                 <p>Administrador</p>
                             </div>
-                            <div class="col-lg-3">
-                                <button class="btn btn-primary self-aling-center">Reportes</button>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -91,7 +93,9 @@ $op = ($_GET['op']);
                     switch($op){
                         case 1: include('vendedores.php');
                         break;
-                        case 2:
+                        case 2: include('recetas.php');
+                        break;
+                        case 3: include('categorias.php');
                         break;
                     }
                     ?>
@@ -100,27 +104,6 @@ $op = ($_GET['op']);
         </div>
         
     </div>
-
-
-
-
-
-
-
-
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <?php
-        if ($op == 1){
-           
-        }else{
-            ?>
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-            <?php
-        }
-    ?>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
