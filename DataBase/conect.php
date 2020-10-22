@@ -1,8 +1,8 @@
 <?php
-    $server = "";
-    $user = "atlas";
-    $pass = "qwerty123";
-    $database = "atlas";
+    $server = "beirmoae6wnbbif9kpqo-mysql.services.clever-cloud.com";
+    $user = "u9dtlbktibcwz5cc";
+    $pass = "BAd9l8dQ6cjoIqUTdFbK";
+    $database = "beirmoae6wnbbif9kpqo";
 
     $conex = new mysqli($server,$user,$pass,$database);
 
