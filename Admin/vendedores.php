@@ -16,7 +16,7 @@
         </thead>
         <tbody>
             <?php
-            $sql = "SELECT * FROM cocineros";
+            $sql = "SELECT * FROM Cocineros";
             $result = $conex->query($sql);
             while ($dat = $result->fetch_assoc()) {
             ?>
