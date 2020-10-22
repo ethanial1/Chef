@@ -1,5 +1,5 @@
 <?php
-    $server = "mysql.webcindario.com";
+    $server = "";
     $user = "atlas";
     $pass = "qwerty123";
     $database = "atlas";
