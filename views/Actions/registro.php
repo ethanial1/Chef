@@ -10,7 +10,7 @@
         $gustos = $_POST['gustos'];
         $rol = 2;
 
-        $sql = "INSERT INTO cocineros(Clave, Nombre, Poblacion, Estado, Pais, Edad, Descripcion, Gustos, Rol) VALUES ('$clave','$nombre','$poblacion','$estado','$pais','$edad','$descripcion','$gustos',$rol)";
+        $sql = "INSERT INTO Cocineros(Clave, Nombre, Poblacion, Estado, Pais, Edad, Descripcion, Gustos, Rol) VALUES ('$clave','$nombre','$poblacion','$estado','$pais','$edad','$descripcion','$gustos',$rol)";
                 
         $sqlUser = "INSERT INTO Usuarios (Clave,Nombre, Rol) VALUES ('$clave','$nombre','$rol')";
         $conex->query($sqlUser);
