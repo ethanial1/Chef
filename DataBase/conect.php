@@ -1,8 +1,8 @@
 <?php
-    $server = "localhost";
-    $user = "root";
-    $pass = "root";
-    $database = "cocina";
+    $server = "mysql.webcindario.com";
+    $user = "atlas";
+    $pass = "qwerty123";
+    $database = "atlas";
 
     $conex = new mysqli($server,$user,$pass,$database);
 
