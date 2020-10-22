@@ -34,7 +34,7 @@
     
     switch($opcion){
         case 1: //editar un usuario
-            $consulta = "UPDATE cocineros SET Nombre='$nombre',Poblacion='$poblacion',Estado='$estado',Pais='$pais',Edad='$edad',Descripcion='$descripcion',Gustos='$gustos' WHERE Id = '$id'";
+            $consulta = "UPDATE Cocineros SET Nombre='$nombre',Poblacion='$poblacion',Estado='$estado',Pais='$pais',Edad='$edad',Descripcion='$descripcion',Gustos='$gustos' WHERE Id = '$id'";
             $result = $conexion->prepare($consulta);
             $result->execute();
 
