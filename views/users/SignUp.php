@@ -1,10 +1,10 @@
-<section id="pantalla-dividida">
+<section id="pantalla-dividida1">
     <div class="izquierda">
         <form action="" method="POST" class="">
             <div class="form-group">
                 <label for="">Clave</label>
                 <input type="text" class="form-control" id="" aria-describedby="" name="clave">
-                <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <small id="" class="form-text text-muted">Piensa muy bien esta clave ya que sera importante para poder identificarte.</small>
             </div>
             <div class="form-group">
                 <label for="">Nombre</label>
@@ -26,6 +26,9 @@
         </form>
     </div>
     <div class="derecha">
+        <div>
+            <img class="animate__animated animate__headShake" src="assets/svg/cuatro.svg" alt="">
+        </div>
         <h6><i>Registrate para ser parte de esta comunidad de personas amantes por la cocina y del buen gusto</i> </h6>
         <p>
             <small>
