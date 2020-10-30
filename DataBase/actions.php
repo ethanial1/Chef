@@ -38,16 +38,24 @@
             $result = $conexion->prepare($consulta);
             $result->execute();
 
-            
+            $consulta = "UPDATE Usuarios Nombre='$nombre' WHERE ID = '$id";
+            $result = $conexion->prepare($consulta);
+            $result->execute();
+
             $consulta = "SELECT * FROM Cocineros WHERE Id = '$id'";
             $result = $conexion->prepare($consulta);
             $result->execute();
             $data = $result->fetchAll(PDO::FETCH_ASSOC);
         break;
-        case 2:
+        case 2: //borramos un cocinero
             $consulta = "DELETE FROM Cocineros WHERE ID = '$idb'";
             $result = $conexion->prepare($consulta);
             $result->execute();
+
+            $consulta = "DELETE FROM Usuarios WHERE ID = '$idb'";
+            $result = $conexion->prepare($consulta);
+            $result->execute();
+
         break;
         case 3://añadir nueva categoria
             $consulta = "INSERT INTO Categorias(Categoria, Descripcion, Foto) VALUES ('$cate','$des','$archivo')";

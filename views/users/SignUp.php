@@ -36,7 +36,7 @@
             </small>
         </p>
         <p>
-            <small><i>Si ya tienes una cuenta inicia sesión <a href="">aqui</a></i></small>
+            <small><i>Si ya tienes una cuenta inicia sesión <a href="index.php?idx=4">aquí</a></i></small>
         </p>
     </div>
 </section>

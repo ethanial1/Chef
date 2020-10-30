@@ -1,6 +1,9 @@
 <?php
+session_start();
 $idx = ($_GET['idx']);
 $nombre = ($_GET['p']);
+$nombre = $_SESSION['user'];
+include('DataBase/conect.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +22,7 @@ $nombre = ($_GET['p']);
 <body>
     <?php
     include('navBar.php');
-    include('DataBase/conect.php');
+    
 
     switch ($idx) {
         case 1:

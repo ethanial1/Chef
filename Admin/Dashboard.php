@@ -1,6 +1,7 @@
 <?php
+session_start();
 $op = ($_GET['op']);
-
+$nombre = $_SESSION['user'];
 include('../DataBase/conect.php');
 ?>
 <!doctype html>
@@ -23,12 +24,12 @@ include('../DataBase/conect.php');
 
 <body>
     <div class="d-flex">
-        <div class="bg-primary" id="sidebar-container">
+        <div class="bg-primary margen" id="sidebar-container">
             <div class="logo">
                 <h5 class="text-light">Chef</h5>
             </div>
             <div class="menu">
-                <a href="" class="d-block text-light p-3"><i class="icon ion-ios-apps mr-2 lead"></i> Home</a>
+                <a href="../index.php?idx=1" class="d-block text-light p-3"><i class="icon ion-ios-apps mr-2 lead"></i> Home</a>
                 <div class="accordion" id="accordionExample">
                     <div class="">
                         <div class="" id="headingTwo">
@@ -44,7 +45,6 @@ include('../DataBase/conect.php');
                                 <a href="Dashboard.php?op=1" class="d-block p-4 "><i class="icon ion-ios-people mr-2"></i>Usuarios</a>
                                 <a href="Dashboard.php?op=2" class="d-clock p-4 "><i class="icon ion-ios-bookmarks mr-2"></i>Recetas</a>
                                 <a href="Dashboard.php?op=3" class="d-block p-4"><i class="icon ion-ios-nutrition mr-2"></i>Categorias</a>
-                                <a href="Dashboard.php?op=4" class="d-clock p-4 "><i class="icon ion-md-planet mr-2"></i>General</a>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ include('../DataBase/conect.php');
                                     <i class="icon ion-ios-contact lead"></i>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Perfil</a>
+                                    <a class="dropdown-item" href="Dashboard.php?op=4">Perfil</a>
                                     <a class="dropdown-item" href="#">Cerrar sesion</a>
                                 </div>
                             </li>
@@ -82,7 +82,7 @@ include('../DataBase/conect.php');
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-9">
-                                <h5 class="mb-0">Bienvenido user</h5>
+                                <h5 class="mb-0">Bienvenido <?php echo $nombre?></h5>
                                 <p>Administrador</p>
                             </div>
                         </div>
@@ -96,6 +96,8 @@ include('../DataBase/conect.php');
                         case 2: include('recetas.php');
                         break;
                         case 3: include('categorias.php');
+                        break;
+                        case 4: include('vistas/perfil.php');
                         break;
                     }
                     ?>
