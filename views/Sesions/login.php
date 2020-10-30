@@ -25,7 +25,7 @@
             $user_sesion->setCurrentRol($rol);
             $user_sesion->setCurrentId($id);
 
-            header('Location: http://localhost:8888/Recetario/index.php?idx=1');
+            header('Location: https://poloatlas.herokuapp.com/index.php?idx=1');
             die();
         }else{
             echo 'Error';
