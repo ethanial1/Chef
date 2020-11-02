@@ -70,7 +70,6 @@ include('../DataBase/conect.php');
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="Dashboard.php?op=4">Perfil</a>
-                                    <a class="dropdown-item" href="#">Cerrar sesion</a>
                                 </div>
                             </li>
                         </ul>

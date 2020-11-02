@@ -1,9 +1,10 @@
 <?php
 session_start();
 $idx = ($_GET['idx']);
-$nombre = ($_GET['p']);
 $nombre = $_SESSION['user'];
+$id = ($_SESSION['id']);
 include('DataBase/conect.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,6 +37,9 @@ include('DataBase/conect.php');
             break;
         case 4:
             include('views/users/LogIn.php'); //inicio de sesio
+            break;
+        case 5:
+            include('views/users/perfilUser.php');
             break;
         default:
             echo 'Creo que estas perdido, regresa al home desde <a href="index.php?idx=1">aquí.</a>';

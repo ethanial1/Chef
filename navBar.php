@@ -27,7 +27,7 @@
                     case 2://case de usuario-Chef
         ?>
                         <li>
-                            <a href="">Perfil</a>
+                            <a href="index.php?idx=5">Perfil</a>
                         </li>
                         <li>
                             <a href="index.php?idx=1">Home</a>
