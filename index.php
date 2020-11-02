@@ -70,6 +70,7 @@ include('DataBase/conect.php');
         </div>
     </footer>
 
+    
     <script src="https://wowjs.uk/dist//wow.min.js"></script>
     <script>
         new WOW().init();

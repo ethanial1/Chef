@@ -6,30 +6,30 @@
 <div>
     <section id="pantalla-dividida1">
         <div class="izquierda">
-            <form action="" method="POST" class="">
+            <form action="" method="POST" class="" id="userActualizar">
                 <div class="form-group">
-                    <input type="text" value="<?php echo $dat['id']; ?>" hidden>
+                    <input type="text" value="<?php echo $dat['Id']; ?>"  id="idu" name="idu">
                     <label for="">Clave</label>
-                    <input type="text" class="form-control" id="" aria-describedby="" name="clave" value="<?php echo $dat['Clave']; ?>">
+                    <input type="text" class="form-control" id="claveu" aria-describedby="" name="claveu" value="<?php echo $dat['Clave']; ?>">
                     <small id="" class="form-text text-muted">Piensa muy bien esta clave ya que sera importante para poder identificarte.</small>
                 </div>
                 <div class="form-group">
                     <label for="">Nombre</label>
-                    <input class="form-control" required type="text" name="nombre" placeholder="" value="<?php echo $dat['Nombre']; ?>">
+                    <input class="form-control" required type="text" name="nombreu" placeholder="" value="<?php echo $dat['Nombre']; ?>" id="nombreu">
                     <label>Población</label>
-                    <input class="form-control" required type="text" name="poblacion" placeholder="" value="<?php echo $dat['Poblacion']; ?>">
+                    <input class="form-control" required type="text" name="poblacionu" placeholder="" value="<?php echo $dat['Poblacion']; ?>" id="poblacionu">
                     <label>Estado</label>
-                    <input class="form-control" required type="text" name="estado" placeholder="" value="<?php echo $dat['Estado']; ?>">
+                    <input class="form-control" required type="text" name="estadou" placeholder="" value="<?php echo $dat['Estado']; ?>" id="estadou">
                     <label>pais</label>
-                    <input class="form-control" required type="text" name="pais" placeholder="" value="<?php echo $dat['Pais']; ?>">
+                    <input class="form-control" required type="text" name="paisu" placeholder="" value="<?php echo $dat['Pais']; ?>" id='paisu'>
                     <label>Edad</label>
-                    <input class="form-control" required type="number" name="edad" placeholder="" value="<?php echo $dat['Edad']; ?>">
+                    <input class="form-control" required type="number" name="edadu" placeholder="" value="<?php echo $dat['Edad']; ?>" id="edau">
                     <label>Descripcion</label>
-                    <input class="form-control" required type="text" name="descripcion" placeholder="" value="<?php echo $dat['Descripcion']; ?>">
+                    <input class="form-control" required type="text" name="descripcionu" placeholder="" value="<?php echo $dat['Descripcion']; ?>" id="descripcionu">
                     <label>Gustos</label>
-                    <input class="form-control" required type="text" name="gustos" placeholder="" value="<?php echo $dat['Gustos']; ?>">
+                    <input class="form-control" required type="text" name="gustosu" placeholder="" value="<?php echo $dat['Gustos']; ?>" id="gustosu">
                 </div>
-                <button type="submit" class="btn btn-primary" name="registrarse">Actualizar</button>
+                <button type="submit" class="btn btn-primary" name="actualizaru">Actualizar</button>
             </form>
         </div>
         <div class="derecha">
@@ -40,4 +40,7 @@
 </div>
 <?php
     }
+    
+    include('views/Actions/actualizar.php');
 ?>
+
