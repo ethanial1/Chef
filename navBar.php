@@ -19,7 +19,7 @@
                             <ul class="lista-espacio">
                                 <li><a href="index.php">Home</a></li>
                                 <li><a href="Admin/Dashboard.php?op=1">Administrar</a></li>
-                                <li><a href="Acciones/cerrar_sesion.php"><i class="fas fa-times"></i> Cerrar</a></li>
+                                <li><a href="views/Sesions/cerrar_sesion.php"><i class="fas fa-times"></i> Cerrar</a></li>
                             </ul>
                         </li>
         <?php
