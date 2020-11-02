@@ -24,7 +24,7 @@ include('../DataBase/conect.php');
 
 <body>
     <div class="d-flex">
-        <div class="bg-primary margen" id="sidebar-container">
+        <div class="bg-primary" id="sidebar-container">
             <div class="logo">
                 <h5 class="text-light">Chef</h5>
             </div>
