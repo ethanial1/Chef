@@ -8,7 +8,7 @@
         <div class="izquierda">
             <form action="" method="POST" class="" id="userActualizar">
                 <div class="form-group">
-                    <input type="text" value="<?php echo $dat['Id']; ?>"  id="idu" name="idu">
+                    <input type="text" value="<?php echo $dat['Id']; ?>" hidden id="idu" name="idu">
                     <label for="">Clave</label>
                     <input type="text" class="form-control" id="claveu" aria-describedby="" name="claveu" value="<?php echo $dat['Clave']; ?>">
                     <small id="" class="form-text text-muted">Piensa muy bien esta clave ya que sera importante para poder identificarte.</small>

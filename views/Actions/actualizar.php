@@ -18,7 +18,7 @@
         $conex->query($sqlUser);
 
         if($conex->query($sql)){
-            header('Location: ');
+            header('Location: https://poloatlas.herokuapp.com/index.php?idx=5');
         }else{
             ?>
             <script>
