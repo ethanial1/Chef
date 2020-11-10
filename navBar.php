@@ -26,15 +26,15 @@
                     break;
                     case 2://case de usuario-Chef
         ?>
-                        <li>
-                            <a href="index.php?idx=5">Perfil</a>
+                        <li class="lista lista-nombre"><h6><?php echo $nombre ?></h6>
+                            <ul class="lista-espacio">
+                                <li><a href="index.php?idx=1">Home</a></li>
+                                <li><a href="index.php?idx=5">Perfil</a></li>
+                                <li><a href="index.php?idx=6">Nueva receta</a></li>
+                                <li><a href="views/Sesions/cerrar_sesion.php">Cerrar Sesión</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="index.php?idx=1">Home</a>
-                        </li>
-                        <li>
-                            <a href="views/Sesions/cerrar_sesion.php" class="m-3">Cerrar Sesión</a>
-                        </li>
+                        
         <?php
                     break;
                 }

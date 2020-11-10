@@ -46,6 +46,17 @@ body{
     height: 30vh;
 }
 
+#pantalla-receta{
+    display: flex;
+    height: 100vh;
+}
+.izquierda-receta{
+    padding: 3vh;
+    height: 90vh;
+    width: 60vh;
+    margin-left: 10vh;
+}
+
 .derecha{
     text-align:justify;
     color: gray;
@@ -138,6 +149,53 @@ body{
     font-size: 16px;
     font-weight: 300;
 }
+
+
+.lista ul, ol{
+    list-style: none;
+}
+.lista-espacio ul,ol{
+    list-style: none;
+}
+.lista ul li a{
+    text-decoration: none;
+    background-color: white;
+    color: green;
+    padding: 10px;
+    display: block;
+}
+
+.lista li a:hover{
+    background-color: green;
+    color: white;
+}
+.lista > li{
+    float: right;
+}
+.lista ul{
+    text-shadow: chartreuse;
+    text-align: center;
+    display: none;
+    position: absolute;
+    margin-right: 90px;
+    width: 23vh;
+}
+.lista li ul{
+    box-shadow: black;
+}
+
+.lista:hover > ul{
+    display: block;
+    
+}
+.lista-espacio{
+    margin-right: 8vh;
+}
+
+.lista-nombre{
+    margin-right: 20vh;
+}
+
 
 
 
