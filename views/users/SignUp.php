@@ -13,11 +13,11 @@
                 <input class="form-control" required type="text" name="poblacion" placeholder="">
                 <label>Estado</label>
                 <input class="form-control" required type="text" name="estado" placeholder="">
-                <label>pais</label>
+                <label>País</label>
                 <input class="form-control" required type="text" name="pais" placeholder="">
                 <label>Edad</label>
                 <input class="form-control" required type="number" name="edad" placeholder="">
-                <label>Descripcion</label>
+                <label>Descripción</label>
                 <input class="form-control" required type="text" name="descripcion" placeholder="">
                 <label>Gustos</label>
                 <input class="form-control" required type="text" name="gustos" placeholder="">
