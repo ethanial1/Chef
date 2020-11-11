@@ -3,6 +3,8 @@ session_start();
 $idx = ($_GET['idx']);
 $nombre = $_SESSION['user'];
 $id = ($_SESSION['id']);
+
+$idc = ($_GET['categoria-op-9876tgdjbdjbvjfvjnc']);
 include('DataBase/conect.php');
 
 ?>
@@ -44,6 +46,9 @@ include('DataBase/conect.php');
             break;
         case 6:
             include('views/recetas/nueva.php'); //pantalla para agregar una nueva receta.
+            break;
+        case 7:
+            include('views/home/categoriasinfo.php');
             break;
         default:
             echo 'Creo que estas perdido, regresa al home desde <a href="index.php?idx=1">aquí.</a>';

@@ -50,13 +50,32 @@
             $sql = "SELECT * FROM Categorias";
             $result = $conex->query($sql);
             while ($dat = $result->fetch_assoc()) {  
-            ?>
+        ?>
                 
                     <div class="carta">
                             <img class="card-img-top" src="data:image/jpg;base64,<?php echo base64_encode($dat['Foto']); ?>" alt="">
-                            <h4><?php echo $dat['Categoria'] ?></h4>
+                            <h4><a href="index.php?categoria-op-9876tgdjbdjbvjfvjnc=<?php echo $dat['Id']?>&idx=7"><?php echo $dat['Categoria'] ?></a></h4>
                             <p><?php echo $dat['Descripcion'] ?></p>
                     </div>
+        <?php                
+            }
+        ?>
+    </div>
+    <div class="contenedor">
+        <?php
+            $sql = "SELECT * FROM Categorias";
+            $result = $conex->query($sql);
+            while ($dat = $result->fetch_assoc()) {  
+        ?>
+        <div class="card_cat">
+            <img class="card_img" src="data:image/jpg;base64,<?php echo base64_encode($dat['Foto']); ?>" alt="">
+            <div class="card_data">
+                <h1 class="card_title"><?php echo $dat['Categoria'] ?></h1>
+                <p class="card_description"><?php echo $dat['Descripcion'] ?></p>
+                <a href="#" class="card_button">más</a>
+            </div>
+
+        </div>
         <?php                
             }
         ?>
