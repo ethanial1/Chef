@@ -24,7 +24,7 @@
 
         //insertamos en la base de datos
         
-        $consulta = "INSERT INTO Recetas(IDuser,Nombre_platillo,CategoriaP,Ingredientes,Procedimiento,Foto) values('$iduser','$nombre','$categoria',$concatenar','$procedimiento','$foto')";
+        $consulta = "INSERT INTO Recetas(IDuser,Nombre_platillo,CategoriaP,Ingredientes,Procedimiento,Foto) values('$iduser','$nombre','$categoria','$concatenar','$procedimiento','$foto')";
         $result = mysqli_query($conex, $consulta);
 
         if($result){
