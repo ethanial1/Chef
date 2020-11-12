@@ -3,7 +3,7 @@
         <div class="izquierda-receta">
             <form  name="add_receta" id="ingredientes_receta" method="POST">
                 <div>
-                    <input type="number" name="iduser" value="<?php echo $id ?>">
+                    <input type="number" name="iduser" value="<?php echo $id ?>" hidden>
                 </div>
                 <div class="form-group">
                     <label for="">Nombre del Platillo.</label>
