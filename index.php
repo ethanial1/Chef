@@ -4,6 +4,8 @@ $idx = ($_GET['idx']);
 $nombre = $_SESSION['user'];
 $id = ($_SESSION['id']);
 
+$idreceta = ($_GET['recetaid']);
+
 $categori = ($_GET['categoria-op-9876tgdjbdjbvjfvjnc']);
 include('DataBase/conect.php');
 
@@ -18,6 +20,9 @@ include('DataBase/conect.php');
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Polo Atlas</title>
@@ -33,6 +38,7 @@ include('DataBase/conect.php');
             include('views/home/home.php'); //home muestra las recetas
             break;
         case 2: //recetas
+            include('views/home/inforeceta.php');
             break;
             //users-------------
         case 3:
@@ -59,7 +65,7 @@ include('DataBase/conect.php');
 
 
 <?php
-if ($idx != 6){
+if ($idx != 6 || $idx != 7){
     ?>
     <footer class="footer">
         <div class="l-footer">

@@ -7,6 +7,8 @@
     --dark-color-lighten: #f2f5ff; 
     --black-color: #000;
 
+    --white-bond: #F0ECE7;
+
     /*Fuente y tipografia*/
     --body-font: 'Poppins', sans-serif;
     --h1-font-size: 1rem;
@@ -69,6 +71,11 @@ img{
 #pantalla-dividida1{
     display: flex;
     height: 90vh;
+}
+#pantalla-dividida-recta{
+    display: flex;
+    width: 90%;
+    height: 40vh;
 }
 .izquierda{
     padding: 3vh;
@@ -158,8 +165,8 @@ img{
     height: 10vh;
 }
 .contenedor .carta{
-    width: 300px;
-    height: 340px;
+    width: 250px;
+    height: 260px;
     border-radius: 9px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     margin: 20px;
@@ -173,7 +180,7 @@ img{
 }
 .contenedor .carta img{
     width: 300px;
-    height: 200px;
+    height: 180px;
 }
 
 .contenedor .carta h4{
@@ -272,6 +279,50 @@ img{
 .card_cat:hover .card_button{
     transition-delay: .2s;
     opacity: 1;
+}
+
+
+/*-----información / estilo de presentación de la receta */
+.platillo{
+    margin-top: 5vh;
+}
+.foto-platillo{
+    width: 100%;
+    height: 46vh;
+}
+.foto-platillo img{
+    width: 90%;
+    height: 46vh;
+    align-self: center;
+}
+.info-platillo{
+    width: 90%;
+    height: 16vh;
+    background-color: var(--white-bond);
+    align-items: center;
+    align-content: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 2rem 1rem 0;
+    text-align: center;
+}
+
+.nombre-platillo{
+    align-items: center;
+}
+.platillo-n{
+    font-size: 40px;
+    align-self: center;
+}
+
+.categoria-platillo{
+    font-size: 20px;
+    color: #000;
+}
+
+.ingredientes-platillo{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
 }
 
 

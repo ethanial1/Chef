@@ -1,7 +1,7 @@
 <div>
     <section id="pantalla-receta">
         <div class="izquierda-receta">
-            <form  name="add_receta" id="ingredientes_receta" method="POST">
+            <form  name="add_receta" id="ingredientes_receta" method="POST" enctype="multipart/form-data">
                 <div>
                     <input type="number" name="iduser" value="<?php echo $id ?>" hidden>
                 </div>
@@ -12,7 +12,7 @@
                 </div>
                 <div class="form-group">
                     <label for="">Imagen</label>
-                    <input type="file" class="form-control" name="foto">
+                    <input type="file" class="form-control" name="foto" id="foto" required>
                 </div>
                 <div class="form-group">
                     <label for="">Categoria</label>

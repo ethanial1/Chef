@@ -6,7 +6,7 @@
         $categoria = ($_POST['categoriaP']);
         $ingredient = ($_POST['ingredient']);
         $procedimiento = ($_POST['procedimiento']);
-        $foto = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
+        $imagen = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
         //contamos cuatos elementos tiene el array y lo guardamos en la variable $cuantos
         $cuantos = count($ingredient);
 
@@ -24,7 +24,7 @@
 
         //insertamos en la base de datos
         
-        $consulta = "INSERT INTO Recetas(IDuser,Nombre_platillo,CategoriaP,Ingredientes,Procedimiento,Foto) values('$iduser','$nombre','$categoria','$concatenar','$procedimiento','$foto')";
+        $consulta = "INSERT INTO Recetas(IDuser,Nombre_platillo,CategoriaP,Ingredientes,Procedimiento,Foto) values('$iduser','$nombre','$categoria','$concatenar','$procedimiento','$imagen')";
         $result = mysqli_query($conex, $consulta);
 
         if($result){
