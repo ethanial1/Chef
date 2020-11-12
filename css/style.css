@@ -2,13 +2,14 @@
 :root{
     /*variables de css*/
     --first-color: #f2a20c;
-    --white-color: #e9eaec;
+    --white-color: #ffff;
     --darck-color: #272d40;
     --dark-color-lighten: #f2f5ff; 
+    --black-color: #000;
 
     /*Fuente y tipografia*/
     --body-font: 'Poppins', sans-serif;
-    --h1-font-size: 1.5rem;
+    --h1-font-size: 1rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
@@ -187,32 +188,33 @@ img{
 
 /*------card de categorias -------*/
 .container_card{
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--dark-color-lighten);
+    background-color: var(--white-color);
 }
 
 .card_cat{
-    width: 320px;
-    height: 400px;
-    background-color: var(--darck-color);
+    width: 260px;
+    height: 260px;
+    background-color: var(--white-color);
     border-radius: 1rem;
-    padding: 4rem 2rem 0;
+    padding: 2rem 1rem 0 1rem;
     color: var(--white-color);
     overflow-y: hidden;
     margin: 1vh;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .card_img{
     position: absolute;
-    width: 260px;
+    width: 229px;
     filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4));
 }
 
 .card_data{
-    transform: translateY(15.2rem);
+    transform: translateY(11.2rem);
     text-align: center;
 }
 
@@ -227,11 +229,12 @@ img{
     text-align: initial;
     margin-bottom: 1.5rem;
     opacity: 0;
+    color: var(--black-color);
 }
 
 .card_button{
     display: block;
-    width: max-content;
+    width: 3vh;
     padding: 1.125rem 2rem;
     background-color: var(--first-color);
     color: var(--white-color);
@@ -254,14 +257,14 @@ img{
 
 /*-----card hover effects-----*/
 .card_cat:hover .card_img{
-    transform: translate(0rem, -6.5rem);
+    transform: translate(0rem, -2.5rem);
 }
 .card_cat:hover .card_data{
     transform: translateY(7.8rem);
 }
 
 .card_cat:hover .card_title{
-    transform: translateX(-6.3rem);
+    transform: translateX(-5rem);
     margin-bottom: 0;
 }
 

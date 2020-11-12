@@ -4,7 +4,7 @@ $idx = ($_GET['idx']);
 $nombre = $_SESSION['user'];
 $id = ($_SESSION['id']);
 
-$idc = ($_GET['categoria-op-9876tgdjbdjbvjfvjnc']);
+$categori = ($_GET['categoria-op-9876tgdjbdjbvjfvjnc']);
 include('DataBase/conect.php');
 
 ?>
