@@ -12,7 +12,7 @@
             ?>
             <div class="carta">
                 <img class="card-img-top" src="data:image/jpg;base64,<?php echo base64_encode($dat['Foto']); ?>" alt="">
-                <h4><a href="index.php?idx=2&recetaid=<?php echo $dat['ID']?>&djfj-ñpojdsk"><?php echo $dat['Nombre_platillo'] ?></a></h4>
+                <h4><a href="receta.php?idx=2&recetaid=<?php echo $dat['ID']?>"><?php echo $dat['Nombre_platillo'] ?></a></h4>
                 <p>Receta de <?php echo $dat['Nombre'] ?></p>
             </div>
         <?php                
