@@ -66,11 +66,6 @@ include('DataBase/conect.php');
                     <div class="multi-collapse" id="multiCollapseExample1">
                         <div class="card card-body">
                             <form action="" method="POST">
-                                <div>
-                                    <input type="number" name="id" id="comId">
-                                    <input type="text" name="producto" id="comUser">
-                                    <input type="text" name="dirigido" id="comProduct">
-                                </div>
                                 <div class="form-group row">
                                     <?php
                                         if(isset($_GET['idPre'])){
