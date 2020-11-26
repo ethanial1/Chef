@@ -124,10 +124,10 @@
                 $query = "INSERT into Respuestas(IdPregunta,Respuesta, Fecha) values ('".$_GET['idGen']."','".$_POST['comentario']."', NOW())";
                 $result = $conex->query($query);
                 if($result){
-                    header("Location: index.php?idx=2&recetaid=$idreceta");
+                    header('Location: https://poloatlas.herokuapp.com/index.php?idx=1');
                     
                 }else{
-                    header("Location: index.php?idx=2&recetaid='$idreceta'");
+                    header('Location: https://poloatlas.herokuapp.com/index.php?idx=1');
                 }
             }
 
