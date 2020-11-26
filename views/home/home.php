@@ -64,4 +64,111 @@
             }
         ?>
     </div>
+    <div class="container mt-5 categorias-info">
+        <div class="mb-3">
+            <h5>Preguntas...</h5>
+            <small>Si tienes alguna duda puedes hacer una pregunta y con gusto la comunidad de chef la respondera.....</small>
+        </div>
+        <div>
+            <div class="shadow-lg p-3 mb-5 bg-white rounded" style="margin-bottom: 7vh;">
+                <div class="row">
+                    <div class="col">
+                        <div class="multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                <form action="" method="POST">
+                                    <div class="form-group row">
+                                        <?php
+                                            if(isset($_GET['idGen'])){
+                                                echo '<h6><i>Todos queremos saber qué piensas</i></h6>';
+                                            }else{
+                                                echo '<h6><i>¿Tienes alguna duda?</i></h6>';
+                                            }
+                                        ?>
+                                    </div>
+                                    <div class="form-group row">
+                                        <?php
+                                            if(isset($_GET['idGen'])){
+                                                echo '<label for="" class="col-sm-2 col-form-label">Responde la Pregunta...</label>';
+                                            }else{
+                                                echo '<label for="" class="col-sm-2 col-form-label">Haz una pregunta...</label>';
+                                            }
+                                        ?>
+                                        <div class="col-sm-10">
+                                            <textarea name="comentario" required class="form-control" rows="6" cols="20" <?php if(isset($_GET['idGen'])){echo 'placeholder="Escribe aquí tu respuesta.....""'; }else{ echo 'placeholder="Escribe aquí tu pregunta....."';} ?> ></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <input class="btn btn-success" type="submit" <?php if(isset($_GET['idGen'])){echo  'name="Responder" value="Responder"'; }else{ echo 'name="enviar" value="enviar"';} ?>>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php
+            if(isset($_POST['enviar'])){
+                $query = "INSERT into Preguntas(Pregunta, Fecha, reply) values ('".$_POST['comentario']."', NOW(),1)";
+                $result = $conex->query($query);
+                if($result){
+                    header("Location: receta.php?idx=2&recetaid='$idreceta'&idGen=3");
+                    
+                }else{
+                    header("Location: receta.php?idx=2&recetaid='$idreceta'&idGen=3");
+                }
+            }
+
+            if(isset($_POST['Responder'])){
+                $query = "INSERT into Respuestas(IdPregunta,Respuesta, Fecha) values ('".$_GET['idGen']."','".$_POST['comentario']."', NOW())";
+                $result = $conex->query($query);
+                if($result){
+                    header("Location: index.php?idx=2&recetaid=$idreceta");
+                    
+                }else{
+                    header("Location: index.php?idx=2&recetaid='$idreceta'");
+                }
+            }
+
+        ?>
+        <?php
+        //select * from Preguntas where IdReceta = 2;
+        $respuestas = "SELECT * from Preguntas where reply = 1";
+        $result = $conex->query($respuestas);
+        while ($data = $result->fetch_assoc()) { 
+
+        ?>
+            <div class="pregunta-principal mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text"><?php echo $data['Pregunta'] ?></p>
+                        <a href="index.php?idx=1&idGen=<?php echo $data['Id'] ?>" class="btn mt-3 mb-3">Responder</a>
+                        <div class="respuestas">
+                            <ul class="list-group list-group-flush">
+
+            <?php
+                $idPregunta = $data['Id'];
+                //echo $idPregunta;
+                //SELECT Respuesta from Respuestas where IdPregunta = 11;
+                $respuesta = "SELECT Respuesta from Respuestas where IdPregunta = $idPregunta";
+                //echo $respuesta;
+                $resultado = $conex->query($respuesta);
+                while ($datos = $resultado->fetch_assoc()){
+            ?>
+                                <li class="list-group-item"><?php echo $datos['Respuesta'] ?></li>
+            <?php
+            }
+            ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <?php
+        }
+        ?>
+
+    </div> 
 </div>
