@@ -65,7 +65,7 @@ include('DataBase/conect.php');
 
 
 <?php
-if ($idx == 6 || $idx != 7){
+if ($idx != 6 or $idx != 7){
     ?>
     <footer class="footer">
         <div class="l-footer">
