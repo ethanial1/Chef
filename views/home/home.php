@@ -127,11 +127,12 @@
                 //header('Location: https://poloatlas.herokuapp.com/index.php?idx=1');
                 //die();
                 if($result){
-                    //header('Location: https://poloatlas.herokuapp.com/index.php?idx=1');
+                    header('Location: https://poloatlas.herokuapp.com/index.php?idx=1');
                     
                 }else{
-                    //header('Location: https://poloatlas.herokuapp.com/index.php?idx=1');
+                    header('Location: https://poloatlas.herokuapp.com/index.php?idx=1');
                 }
+                header('Location: https://poloatlas.herokuapp.com/index.php?idx=1');
             }
 
         ?>
