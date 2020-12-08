@@ -24,18 +24,18 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
                         <?php
                         $folder = "Wiki/actions/archivos";
                         if($handler = opendir($folder)){
                             while (false !== ($file = readdir($handler))){
                                 //echo "<li class='list-group-item'></li>";
+                                echo "<tr>";
                                 echo "<td><a href='././index.php?idx=10&archivo=$file'>$file</a></td>";
+                                echo "</tr>";
                             }
                             closedir($handler);
                         }
                         ?>
-                        </tr>
                     </tbody>
                 </table>
             </div>
