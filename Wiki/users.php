@@ -17,19 +17,27 @@
         <div class="derecha">
             <h5><i>Archivos existentes</i></h5>
             <div>
-                <div class="card" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Archivo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
                         <?php
                         $folder = "Wiki/actions/archivos";
                         if($handler = opendir($folder)){
                             while (false !== ($file = readdir($handler))){
-                                echo "<li class='list-group-item'><a href='././index.php?idx=10&archivo=$file'>$file</a></li>";
+                                //echo "<li class='list-group-item'></li>";
+                                echo "<td><a href='././index.php?idx=10&archivo=$file'>$file</a></td>";
                             }
                             closedir($handler);
                         }
                         ?>
-                    </ul>
-                </div>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
