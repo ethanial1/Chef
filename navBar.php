@@ -30,6 +30,7 @@
                             <ul class="lista-espacio">
                                 <li><a href="index.php?idx=1">Home</a></li>
                                 <li><a href="index.php?idx=5">Perfil</a></li>
+                                <li><a href="index.php?idx=8">Wiki</a></li>
                                 <li><a href="index.php?idx=6">Nueva receta</a></li>
                                 <li><a href="views/Sesions/cerrar_sesion.php">Cerrar Sesión</a></li>
                             </ul>
@@ -46,6 +47,9 @@
             </li>
             <li>
                 <a href="index.php?idx=4" class="m-3">Inicial sesión</a>
+            </li>
+            <li>
+                <a href="index.php?idx=9">Wiki</a>
             </li>
         <?php
             }

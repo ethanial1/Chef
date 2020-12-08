@@ -1,0 +1,4 @@
+Errores
+Este es un archivo de juegos
+User: Miguel - Tue 08 Dec 2020:
+ Este es mi archivo

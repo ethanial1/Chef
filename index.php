@@ -4,6 +4,9 @@ $idx = ($_GET['idx']);
 $nombre = $_SESSION['user'];
 $id = ($_SESSION['id']);
 
+//archivos
+$archi = $_GET['archivofile'];
+
 $idreceta = ($_GET['recetaid']);
 
 $categori = ($_GET['categoria-op-9876tgdjbdjbvjfvjnc']);
@@ -55,6 +58,15 @@ include('DataBase/conect.php');
             break;
         case 7:
             include('views/home/categoriasinfo.php');
+            break;
+        case 8:
+            include('Wiki/users.php');
+            break;
+        case 9:
+            include('Wiki/general.php');
+            break;
+        case 10:
+            include('Wiki/actions/ver.php');
             break;
         default:
             echo 'Creo que estas perdido, regresa al home desde <a href="index.php?idx=1">aquí.</a>';

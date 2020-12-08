@@ -132,7 +132,14 @@ include('DataBase/conect.php');
                 <div class="card">
                     <div class="card-body">
                         <p class="card-text"><?php echo $data['Pregunta'] ?></p>
-                        <a href="receta.php?recetaid=<?php echo $_GET['recetaid'] ?>&idPre=<?php echo $data['Id'] ?>" class="btn mt-3 mb-3">Responder</a>
+                        <?php if(isset($_SESSION['id']))
+                        { 
+                        ?>
+                            <a href="receta.php?recetaid=<?php echo $_GET['recetaid'] ?>&idPre=<?php echo $data['Id'] ?>" class="btn mt-3 mb-3">Responder</a>
+                        <?php
+                        }
+                        ?>
+                        
                         <div class="respuestas">
                             <ul class="list-group list-group-flush">
 

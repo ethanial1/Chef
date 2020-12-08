@@ -18,18 +18,6 @@
             <section id="food">
                 <div class="row">
                     <div class="col">
-                        <img class="wow bounceOutUp" width="100" height="100" src="http://keatz.com/wp-content/uploads/2019/10/Illu-2.png">
-                    </div>
-                    <div class="col">
-                        <img class="wow bounceInUp" width="100" height="100" src="http://keatz.com/wp-content/uploads/2019/10/Illu-1.png">
-                    </div>
-                    <div class="col">
-                        <img width="100" height="100" src="http://keatz.com/wp-content/uploads/2019/10/Illu-5.png">
-                    </div>
-                    <div class="col">
-                        <img width="100" height="100" src="http://keatz.com/wp-content/uploads/2019/10/Illustration-Avocado.png">
-                    </div>
-                    <div class="col">
                         <img width="100" height="100" src="assets/svg/ensalada.svg" alt="">
                   </div>
                 </div>
@@ -147,7 +135,14 @@
                 <div class="card">
                     <div class="card-body">
                         <p class="card-text"><?php echo $data['Pregunta'] ?></p>
-                        <a href="index.php?idx=1&idGen=<?php echo $data['Id'] ?>" class="btn mt-3 mb-3">Responder</a>
+                        <?php
+                            if(isset($_SESSION['id'])){
+                                ?>
+                                <a href="index.php?idx=1&idGen=<?php echo $data['Id'] ?>" class="btn mt-3 mb-3">Responder</a>
+                                <?php
+                                
+                            }
+                        ?>
                         <div class="respuestas">
                             <ul class="list-group list-group-flush">
 

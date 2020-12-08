@@ -1,0 +1,4 @@
+Hola mundo
+LF User: Miguel - Mon 07 Dec 2020:
+ Hola mundo desde un archivo txt
+User: Miguel - Mon 07 Dec 2020:: Segunda prueba

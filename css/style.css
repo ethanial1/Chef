@@ -72,6 +72,10 @@ img{
     display: flex;
     height: 90vh;
 }
+#pantalla-dividida2{
+    display: flex;
+    height: 90vh;
+}
 #pantalla-dividida-recta{
     display: flex;
     width: 90%;

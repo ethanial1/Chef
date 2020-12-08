@@ -1,0 +1,7 @@
+Archivo de texto de prueba
+User: Miguel - Mon 07 Dec 2020:
+ Hola
+User: Miguel - Mon 07 Dec 2020:
+ No es un buen tema
+User: Miguel - Tue 08 Dec 2020:
+ O no?
