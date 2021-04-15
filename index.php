@@ -91,7 +91,7 @@ if ($idx != 6 or $idx != 7){
                     <li>
                         <h2>Información</h2>
                         <ul class="box">
-                            <li><a href="#">Programador - Fernando Tolentino Santiago</a></li>
+                            <li><a href="#">Programador - Ethan John</a></li>
                             <li><a href="#">Universidad Politécnica de Tulancingo Hgo.</a></li>
                             <li><a href="#">Programación de aplicaciones Web</a></li>
                         </ul>
